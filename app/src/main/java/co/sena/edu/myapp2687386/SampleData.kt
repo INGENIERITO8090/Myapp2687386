@@ -1,4 +1,4 @@
-package co.sena.edu.myapp2687386.ui
+package co.sena.edu.myapp2687386
 
 import co.sena.edu.myapp2687386.Message
 
