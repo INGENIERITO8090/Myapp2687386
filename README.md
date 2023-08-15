@@ -114,3 +114,5 @@ fun Conversation(messages:List<Message>){
 ###
 * [el archivo principal se encuentra en esta direccion](app/src/main/java/co/sena/edu/myapp2687386/MainActivity.kt) 
 
+### actalizacion 
+el 15/05/2023 se le creacion las ramas a el proyecto , para tener mayor organizacion en el tutorial oficial de jetpack compose 
