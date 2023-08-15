@@ -57,12 +57,13 @@ fun MessageCard( msg: Message){
                 modifier= Modifier
                     .size(40.dp)
                     .clip(CircleShape)
-                    .border(1.5.dp, color = Color.Green, CircleShape)
+
             )
             Spacer(modifier = Modifier.height(50.dp))
             // state verification
             var isExpanded by remember { mutableStateOf(false) }
-            Column(modifier = Modifier.clickable { isExpanded =!isExpanded } )     {
+
+            Column(modifier = Modifier.clickable { isExpanded = !isExpanded } )     {
 
                 Text(text = msg.author, color= MaterialTheme.colorScheme.scrim, style = MaterialTheme.typography.titleSmall)
                 Spacer(modifier = Modifier.height(4.dp))
@@ -86,7 +87,7 @@ fun MessageCard( msg: Message){
 @Composable
 fun MessageCardPreview(){
     MyApp2687386Theme {
-        Surface(color = MaterialTheme.colorScheme.scrim  , shadowElevation = 4.dp ) {
+        Surface(color = MaterialTheme.colorScheme.scrim  ,  ) {
             MessageCard (msg = Message("Nacho","la vida es muy corta como para morir virgen "))
          }
 
@@ -105,15 +106,6 @@ fun Conversation(messages:List<Message>){
 
 
 
-@Preview
-@Composable
-fun ConversationPreview() {
-    MyApp2687386Theme {
 
-        Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.scrim) {
-            Conversation(SampleData.conversationSample)
-        }
-    }
-}
 
 
