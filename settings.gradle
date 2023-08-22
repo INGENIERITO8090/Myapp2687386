@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MyApp2687386"
 include ':app'
+include ':colelab_2'
