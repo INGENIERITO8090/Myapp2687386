@@ -16,3 +16,4 @@ rootProject.name = "MyApp2687386"
 include ':app'
 include ':colelab_2'
 include ':codelab_3'
+include ':jetpackcomose_6'
